@@ -1,0 +1,490 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    background:#070b14;
+
+    color:white;
+
+    line-height:1.6;
+
+}
+
+
+
+/* HEADER */
+
+header{
+
+    background:#0b1220;
+
+    padding:25px 8%;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:10;
+
+    border-bottom:1px solid #1f2937;
+
+}
+
+
+
+nav{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+
+
+.logo{
+
+    font-size:30px;
+
+    font-weight:bold;
+
+    letter-spacing:1px;
+
+}
+
+
+
+.logo span{
+
+    color:#00ff88;
+
+}
+
+
+
+.links{
+
+    display:flex;
+
+    gap:25px;
+
+}
+
+
+
+.links a{
+
+    color:white;
+
+    text-decoration:none;
+
+    opacity:.8;
+
+    transition:.2s;
+
+}
+
+
+
+.links a:hover{
+
+    color:#00ff88;
+
+    opacity:1;
+
+}
+
+
+
+/* HERO */
+
+
+.hero{
+
+
+    min-height:80vh;
+
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+
+    padding:8%;
+
+
+    background:
+
+    linear-gradient(
+        rgba(7,11,20,.75),
+        rgba(7,11,20,.95)
+    ),
+
+    url("img/gaming.jpg");
+
+
+    background-size:cover;
+
+    background-position:center;
+
+
+}
+
+
+
+
+
+.hero h1{
+
+    font-size:70px;
+
+    line-height:1.1;
+
+}
+
+
+
+.hero p{
+
+    margin-top:20px;
+
+    max-width:600px;
+
+    color:#cbd5e1;
+
+    font-size:22px;
+
+}
+
+
+
+
+
+.button{
+
+    display:inline-block;
+
+    margin-top:30px;
+
+
+    background:#00ff88;
+
+    color:#020617;
+
+
+    padding:15px 35px;
+
+
+    border-radius:30px;
+
+
+    text-decoration:none;
+
+
+    font-weight:bold;
+
+
+    width:max-content;
+
+
+    transition:.2s;
+
+}
+
+
+
+.button:hover{
+
+    transform:scale(1.05);
+
+}
+
+
+
+
+
+/* CONTENIDO */
+
+
+main{
+
+    padding:70px 8%;
+
+}
+
+
+
+main h1{
+
+    font-size:50px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+main h2{
+
+    font-size:35px;
+
+    margin-bottom:40px;
+
+}
+
+
+
+
+/* TARJETAS */
+
+
+.cards{
+
+
+    display:grid;
+
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(260px,1fr));
+
+
+    gap:25px;
+
+
+}
+
+
+
+
+
+.card{
+
+
+    background:#111827;
+
+
+    padding:30px;
+
+
+    border-radius:22px;
+
+
+    border:1px solid #1f2937;
+
+
+    transition:.25s;
+
+
+}
+
+
+
+.card:hover{
+
+
+    transform:translateY(-8px);
+
+
+    border-color:#00ff88;
+
+
+}
+
+
+
+.card h3{
+
+
+    font-size:23px;
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+.card p{
+
+
+    color:#94a3b8;
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+.card a{
+
+
+    color:#00ff88;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+
+}
+
+
+
+/* ARTICULOS */
+
+
+.article{
+
+
+    max-width:900px;
+
+}
+
+
+
+.article h2{
+
+
+    margin-top:35px;
+
+    color:#00ff88;
+
+
+}
+
+
+
+.article p{
+
+    font-size:18px;
+
+}
+
+
+
+
+
+/* INPUT */
+
+
+input{
+
+
+    background:#0f172a;
+
+    border:1px solid #334155;
+
+
+    color:white;
+
+
+    padding:15px;
+
+
+    border-radius:20px;
+
+
+}
+
+
+
+
+
+/* FOOTER */
+
+
+footer{
+
+
+    padding:40px;
+
+
+    text-align:center;
+
+
+    background:#0b1220;
+
+
+    color:#64748b;
+
+
+}
+
+
+
+footer a{
+
+
+    color:#00ff88;
+
+
+    text-decoration:none;
+
+
+}
+
+
+
+
+
+/* RESPONSIVE */
+
+
+@media(max-width:800px){
+
+
+    nav{
+
+
+        flex-direction:column;
+
+        gap:20px;
+
+
+    }
+
+
+
+    .links{
+
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+
+    }
+
+
+
+    .hero h1{
+
+
+        font-size:45px;
+
+
+    }
+
+
+
+    main h1{
+
+
+        font-size:38px;
+
+
+    }
+
+
+}
